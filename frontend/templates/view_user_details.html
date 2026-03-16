@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>User Details</h1>
+    <table>
+        <tr><th>sleep_id</th><td>{{ user.sleep_id }}</td></tr>
+        <tr><th>user_id</th><td>{{ user.user_id }}</td></tr>
+        <tr><th>Age</th><td>{{ user.Age }}</td></tr>
+        <tr><th>Gender</th><td>{{ user.Gender }}</td></tr>
+        <tr><th>Bedtime</th><td>{{ user.Bedtime }}</td></tr>
+        <tr><th>Wakeup_time</th><td>{{ user.Wakeup_time }}</td></tr>
+        <tr><th>Sleep_duration</th><td>{{ user.Sleep_duration }}</td></tr>
+        <tr><th>Sleep_efficiency</th><td>{{ user.Sleep_efficiency }}</td></tr>
+        <tr><th>REM_sleep_percentage</th><td>{{ user.REM_sleep_percentage }}</td></tr>
+        <tr><th>Deep_sleep_percentage</th><td>{{ user.Deep_sleep_percentage }}</td></tr>
+        <tr><th>Light_sleep_percentage</th><td>{{ user.Light_sleep_percentage }}</td></tr>
+        <tr><th>Awakenings</th><td>{{ user.Awakenings }}</td></tr>
+        <tr><th>Caffeine_consumption</th><td>{{ user.Caffeine_consumption }}</td></tr>
+        <tr><th>Alcohol_consumption</th><td>{{ user.Alcohol_consumption }}</td></tr>
+        <tr><th>Smoking_status</th><td>{{ user.Smoking_status }}</td></tr>
+        <tr><th>Exercise_frequency</th><td>{{ user.Exercise_frequency }}</td></tr>
+        <tr><th>height</th><td>{{ user.height }}</td></tr>
+        <tr><th>weight</th><td>{{ user.weight }}</td></tr>
+        <tr><th>cholesterol</th><td>{{ user.cholesterol }}</td></tr>
+        <tr><th>gluc</th><td>{{ user.gluc }}</td></tr>
+        <tr><th>active</th><td>{{ user.active }}</td></tr>
+        <tr><th>cardio</th><td>{{ user.cardio }}</td></tr>
+        <tr><th>age_category</th><td>{{ user.age_category }}</td></tr>
+        <tr><th>sound_sleep</th><td>{{ user.sound_sleep }}</td></tr>
+        <tr><th>cardio_health</th><td>{{ user.cardio_impact }}</td></tr>
+        <tr><th>BMI</th><td>{{ user.BMI }}</td></tr>
+    </table>
+    <a href="{{ url_for('search_user') }}">Search Another User</a>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+    <li><a href="{{ url_for('calculate_risk') }}">Cardiovascular Risk Assessment</a></li>
+</body>
+</html>

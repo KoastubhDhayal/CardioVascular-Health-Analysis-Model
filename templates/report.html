@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Training Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #333;
+        }
+        pre {
+            white-space: pre-wrap;       /* CSS to make preformatted text wrap */
+            word-wrap: break-word;       /* CSS for long words to break and wrap */
+            background-color: #f8f8f8;   /* Light grey background */
+            padding: 10px;
+            border: 1px solid #ddd;      /* Light border */
+        }
+    </style>
+</head>
+<body>
+    <h1>Model Training Performance Report</h1>
+    <div>
+        <pre>{{ report | safe }}</pre>  <!-- Render the report content here -->
+    </div>
+    <a href="/">Go back to the home page</a> <!-- Link back to the main page -->
+</body>
+</html>

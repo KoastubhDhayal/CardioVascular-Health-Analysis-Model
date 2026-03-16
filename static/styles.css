@@ -1,0 +1,44 @@
+/* styles.css */
+
+body {
+    background-color: #f4f4f4; /* Light gray background */
+    font-family: 'Arial', sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+h1, h2 {
+    color: #333; /* Dark gray text color */
+    text-align: center; /* Center align headings */
+}
+
+.flex-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+    justify-content: center; /* Center buttons */
+    margin-top: 20px; /* Space above buttons */
+}
+
+/* Custom button styles */
+.btn {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for buttons */
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center items */
+    }
+}

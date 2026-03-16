@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+<body>
+    <h1>User Details</h1>
+    <h2>Average Cardio Impact: {{ avg_cardio_impact }}</h2>
+    <table border="1">
+        <tr>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Sleep Duration</th>
+            <th>REM Sleep Percentage</th>
+            <th>Awakenings</th>
+            <th>Caffeine Consumption</th>
+            <th>Alcohol Consumption</th>
+            <th>Smoking Status</th>
+            <th>Exercise Frequency</th>
+            <th>Height</th>
+            <th>Weight</th>
+            <th>Cholesterol</th>
+            <th>Glucose</th>
+            <th>Active</th>
+            <th>Cardio Impact</th>
+        </tr>
+        {% for record in user_records %}
+        <tr>
+            <td>{{ record.Age }}</td>
+            <td>{{ record.Gender }}</td>
+            <td>{{ record.Sleep_duration }}</td>
+            <td>{{ record.REM_sleep_percentage }}</td>
+            <td>{{ record.Awakenings }}</td>
+            <td>{{ record.Caffeine_consumption }}</td>
+            <td>{{ record.Alcohol_consumption }}</td>
+            <td>{{ record.Smoking_status }}</td>
+            <td>{{ record.Exercise_frequency }}</td>
+            <td>{{ record.height }}</td>
+            <td>{{ record.weight }}</td>
+            <td>{{ record.cholesterol }}</td>
+            <td>{{ record.gluc }}</td>
+            <td>{{ record.active }}</td>
+            <td>{{ record.cardio }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('search_user') }}">Back to Search</a>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User Details</title>
+</head>
+<body>
+    <h1>Add User Details</h1>
+    <form method="POST">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+        </select>
+        <label for="bedtime">Bedtime (DD-MM-YYYY HH:MM):</label>
+        <input type="text" id="bedtime" name="bedtime" required>
+        <label for="wakeup_time">Wakeup Time (DD-MM-YYYY HH:MM):</label>
+        <input type="text" id="wakeup_time" name="wakeup_time" required>
+        <label for="sleep_duration">Sleep Duration (hours):</label>
+        <input type="number" step="0.1" id="sleep_duration" name="sleep_duration" required>
+        <label for="rem_sleep">REM Sleep Percentage:</label>
+        <input type="number" step="0.1" id="rem_sleep" name="rem_sleep" required>
+        <label for="awakenings">Awakenings:</label>
+        <input type="number" id="awakenings" name="awakenings" required>
+        <label for="caffeine_consumption">Caffeine Consumption:</label>
+        <input type="number" id="caffeine_consumption" name="caffeine_consumption" required>
+        <label for="alcohol_consumption">Alcohol Consumption:</label>
+        <input type="number" id="alcohol_consumption" name="alcohol_consumption" required>
+        <label for="smoking_status">Smoking Status:</label>
+        <select id="smoking_status" name="smoking_status" required>
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select>
+        <label for="exercise_frequency">Exercise Frequency:</label>
+        <input type="number" id="exercise_frequency" name="exercise_frequency" required>
+        <label for="height">Height (cm):</label>
+        <input type="number" step="0.1" id="height" name="height" required>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" step="0.1" id="weight" name="weight" required>
+        <label for="cholesterol">Cholesterol:</label>
+        <input type="number" step="0.1" id="cholesterol" name="cholesterol" required>
+        <label for="gluc">Glucose:</label>
+        <input type="number" step="0.1" id="gluc" name="gluc" required>
+        <label for="active">Active (1 for Yes, 0 for No):</label>
+        <input type="number" id="active" name="active" required>
+        <label for="cardio">Cardio (1 for Yes, 0 for No):</label>
+        <input type="number" id="cardio" name="cardio" required>
+        <button type="submit">Add User</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
